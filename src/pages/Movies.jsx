@@ -21,7 +21,7 @@ export default function Movies() {
 
   useEffect(() => {
     dispatch(getGenres());
-  }, [dispatch]);
+  }, []);
 
   useEffect(() => {
     if (genresLoaded) {
