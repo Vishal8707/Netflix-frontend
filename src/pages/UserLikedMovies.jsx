@@ -69,7 +69,3 @@ const Container = styled.div`
   }
 `;
 
-
-
-// arrName?.<operation>
-// arrName && arrName.<operation>
