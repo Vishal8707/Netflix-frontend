@@ -4,12 +4,12 @@ import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
 import { firebaseAuth } from "../Utils/firebase-config";
-import { FaPowerOff, FaSearch } from "react-icons/fa";
+import { FaPowerOff } from "react-icons/fa";
 
 export default function Navbar({ isScrolled }) {
-  const [showSearch, setShowSearch] = useState(false);
-  const [inputHover, setInputHover] = useState(false);
+
   const links = [
+    
     { name: "Home", link: "/" },
     { name: "TV Shows", link: "/tv" },
     { name: "Movies", link: "/movies" },
@@ -39,28 +39,7 @@ export default function Navbar({ isScrolled }) {
           </ul>
         </div>
         <div className="right flex a-center">
-          <div className={`search ${showSearch ? "show-search" : ""}`}>
-            <button
-              onFocus={() => setShowSearch(true)}
-              onBlur={() => {
-                if (!inputHover) {
-                  setShowSearch(false);
-                }
-              }}
-            >
-              <FaSearch />
-            </button>
-            <input
-              type="text"
-              placeholder="Search"
-              onMouseEnter={() => setInputHover(true)}
-              onMouseLeave={() => setInputHover(false)}
-              onBlur={() => {
-                setShowSearch(false);
-                setInputHover(false);
-              }}
-            />
-          </div>
+         
           <button onClick={() => signOut(firebaseAuth)}>
             <FaPowerOff />
           </button>
