@@ -1,7 +1,7 @@
 # NETFLIX CLONE
 
 This project is based on NETFLIX CLONE. 
-Here you can register yourself and watch your favourite movies,tv shows and web series also you can add to your favourite list.
+Here you can register yourself and watch your favourite movies, tv shows and web series also you can add to your favourite list.
 
 ### Tech used
 
