@@ -10,3 +10,6 @@ HTML, CSS, Javascript, MongoDB, Express, Firebase and React.js
 ### DEMO
 
 link- https://netflix-app-gules-three.vercel.app/signup
+
+## 🚀 About Me
+I'm a Backend developer...
